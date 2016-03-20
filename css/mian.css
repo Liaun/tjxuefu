@@ -1,0 +1,141 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{margin:0;
+  padding:0;
+  font-family:微软雅黑;
+}
+
+
+header{
+    min-height:500px;
+    background:rgba(0, 0, 0, 0) url("img/bann.jpg") no-repeat scroll 0 0 / cover;
+
+}
+/*导航ing*/
+header {
+    text-align: center;
+}
+header ul li {
+    display: inline-block;
+}
+
+header ul li a {
+    color: #fff;
+    display: inline-block;
+    font-size: 1em;
+    padding: 0 1.7em;
+    position: relative;
+    vertical-align: middle;/*垂直对齐图片*/
+    font-weight: bold;
+    transition:color .2s ease-in;
+    -webkit-transition:color .2s ease-in;
+}
+header ul li a:hover{
+    outline: medium none;
+    color: lightcoral;
+	list-style-type:none;
+}
+/*导航end*/
+/*轮播ing*/
+.scrolling{
+    width:800px;
+    height:400px;
+    margin:auto;
+    overflow: hidden;
+    position: relative;
+    top:0px;
+}
+.text{
+    width:800px;
+    height:400px;
+    float:left;
+}
+.text h1,h4,h5{
+    text-align: center;
+    color:white;
+}
+.text h1{
+    position:relative;
+    top:100px;
+    font-size:40px;
+}
+.text h4{
+    position: relative;
+    top:110px;
+    text-align: center;
+    font-size: 18px;
+}
+.text img{
+    vertical-align:  middle;
+    position: relative;
+    top:120px;
+}
+.text h5{
+    position: relative;
+    top:130px;
+    text-align: center;
+}
+.scrolling_text{
+    width:2400px;
+    height:400px;
+    z-index: 999;
+    position: absolute;
+    animation: myfirst 5s infinite;
+    -webkit-animation: myfirst 5s infinite;
+    -o-animation: myfirst 5s infinite;
+    -moz-animation: myfirst 5s infinite;
+}
+@keyframes myfirst {
+
+    0%   {left: 0;}
+    50%   {left: 0;}
+    51%   {left: -800px;}
+    99%   {left: -800px;}
+
+    100%  {left: -0px;}
+
+}
+@-o-keyframes myfirst
+{
+    0%   {left: 0;}
+    50%   {left: 0;}
+    51%   {left: -800px;}
+    99%   {left: -800px;}
+
+    100%  {left: -0px;}
+
+
+@-moz-keyframes myfirst
+{
+     0%   {left: 0;}
+    50%   {left: 0;}
+    51%   {left: -800px;}
+    99%   {left: -800px;}
+
+    100%  {left: -0px;}
+
+}
+
+@-webkit-keyframes myfirst
+{
+    0%   {left: 0;}
+    50%   {left: 0;}
+    51%   {left: -800px;}
+    99%   {left: -800px;}
+
+    100%  {left: -0px;}
+
+}
+
+@-ms-keyframes myfirst
+{
+    0%   {left: 0;}
+    50%   {left: 0;}
+    51%   {left: -800px;}
+    99%   {left: -800px;}
+
+    100%  {left: -0px;}
+
+}
+
